@@ -29,7 +29,7 @@ button:hover {
 }
 
 .card {
-  @apply bg-white rounded-2xl shadow-md hover:bg-primary-light/30 p-4 border border-primary-dark;
+  @apply bg-white rounded-xl shadow-md hover:bg-primary-light/30 p-4 border border-primary-dark;
 }
 
 .input {

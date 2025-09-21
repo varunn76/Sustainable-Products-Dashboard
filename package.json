@@ -1,0 +1,21 @@
+{
+  "name": "sustainable-products-dashboard",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varunn76/Sustainable-Products-Dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varunn76/Sustainable-Products-Dashboard/issues"
+  },
+  "homepage": "https://github.com/varunn76/Sustainable-Products-Dashboard#readme"
+}
