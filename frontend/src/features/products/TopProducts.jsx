@@ -1,12 +1,7 @@
-import { useMemo } from "react";
-
-const TopProducts = ({ products }) => {
-  const topProducts = useMemo(() => {
-    if (!products) return [];
-    return [...products]
-      .sort((a, b) => (b.score || 0) - (a.score || 0))
-      .slice(0, 3);
-  }, [products]);
+const TopProducts = ({ products = [] }) => {
+  const topProducts = [...products]
+    .sort((a, b) => (b.score || 0) - (a.score || 0))
+    .slice(0, 3);
 
   return (
     <div className="bg-white rounded shadow p-4">
@@ -17,7 +12,7 @@ const TopProducts = ({ products }) => {
             <span>
               {idx + 1}. {p.title}
             </span>
-            <span className="text-primary"> {p.score || "N/A"}</span>
+            <span className="text-primary">{p.score}</span>
           </li>
         ))}
       </ul>

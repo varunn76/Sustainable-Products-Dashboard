@@ -8,7 +8,7 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
-import { categories } from "../utils";
+import { categories } from "../../utils";
 
 const CategoryChart = ({ products }) => {
   const chartData = useMemo(() => {

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProductCard from "./ProductCard";
 import Loader from "../../components/Loader";
 import DeleteModal from "../../components/DeleteModal";
-import AddProductForm from "../../components/AddProductForm";
+import AddProductForm from "./AddProductForm";
 import toast, { Toaster } from "react-hot-toast";
 import { useDeleteProductMutation } from "../../services/productsApi";
 import { CrossIcon } from "../../icons";
@@ -22,7 +22,7 @@ const ProductList = ({
 
   if (!filteredProducts) return <Loader />;
   if (filteredProducts.length === 0)
-    return <p className="text-gray-700 text-center">No products found.</p>;
+    return <p className="text-gray-700 min-h-screen text-center">No products found.</p>;
 
   const openDeleteModal = (product) => {
     setSelectedProduct(product);

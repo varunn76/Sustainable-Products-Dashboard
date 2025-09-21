@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   useAddProductMutation,
   useUpdateProductMutation,
-} from "../services/productsApi";
+} from "../../services/productsApi";
 import toast, { Toaster } from "react-hot-toast";
-import formConfig from "../constant/formConfig";
+import formConfig from "../../constant/formConfig";
 
 const ProductForm = ({ onClose, initialData = null }) => {
   const isEdit = !!initialData;

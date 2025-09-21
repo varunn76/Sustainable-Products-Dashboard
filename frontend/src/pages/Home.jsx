@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import ProductList from "../features/products/ProductList";
-import AddProductForm from "../components/AddProductForm";
+import AddProductForm from "../features/products/AddProductForm";
 import { CrossIcon, PlusIcon } from "../icons";
 import { useGetProductsQuery } from "../services/productsApi";
 import SearchBar from "../components/SearchBar";
 import Loader from "../components/Loader";
 import ErrorPage from "../components/ErrorPage";
 import { categories } from "../utils";
-import CategoryChart from "../components/CategoryChart";
-import TopProducts from "../components/TopProducts";
+import CategoryChart from "../features/products/CategoryChart";
+import TopProducts from "../features/products/TopProducts";
 import FilterDropdown from "../components/FilterDropdown";
 
 const Home = () => {
